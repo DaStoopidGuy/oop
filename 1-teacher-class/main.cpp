@@ -18,6 +18,24 @@ class Teacher {
         string name, father_name;
         int id, salary;
     public:
+        // Constructor
+        Teacher() {
+            name = father_name = "";
+            id = salary = 0;
+        }
+
+        Teacher(string p_name, string p_fname, int p_id, int p_salary) {
+            name = p_name;
+            father_name = p_fname;
+            id = p_id;
+            salary = p_salary;
+        }
+
+        // Destructor
+        ~Teacher() {
+            cout << "Teacher " << name << " destroyed" << endl;
+        }
+
         // Setters
         void set_name(string str) {
             name = str;
@@ -103,6 +121,8 @@ int main() {
     t3.input_id();
     t3.input_salary();
 
+    Teacher t4("Ali", "Ali", 420, 69);
+
     // Print values of all attributes on screen
     cout << "\nTeacher 1" << endl;
     t1.display();
@@ -110,6 +130,8 @@ int main() {
     t2.display();
     cout << "\nTeacher 3" << endl;
     t3.display();
+    cout << "\nTeacher 4" << endl;
+    t4.display();
 
     return 0; 
 }
