@@ -35,3 +35,10 @@ Print speed and status of sf1, sf2 & sf3 again.
 **Note:**
 - program should be properly indented and commented
 - output should prompt proper messages
+
+# Group Members
+202417 - Zaighum
+202422 - Hamza
+202414 - Anas
+202412 - Sareb
+202413 - Ali Wahla
